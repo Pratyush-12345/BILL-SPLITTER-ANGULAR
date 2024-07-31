@@ -1,0 +1,31 @@
+.person-contribution {
+    background-color: #e8f4fd;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .person {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .person h3 {
+    margin-top: 0;
+  }
+  
+  .person select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .person ul {
+    margin-bottom: 10px;
+  }
+  
+  .person p {
+    font-weight: bold;
+  }
+  

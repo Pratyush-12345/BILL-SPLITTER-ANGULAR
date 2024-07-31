@@ -1,0 +1,19 @@
+<div class="person-contribution">
+  <h2>Person Contributions</h2>
+  <div>
+    <input [(ngModel)]="newPerson.name" placeholder="Person name">
+    <button (click)="addPerson()">Add Person</button>
+  </div>
+  <div class="person" *ngFor="let person of persons">
+    <h3>{{ person.name }}</h3>
+    <select #itemSelect (change)="addItemToPerson(person, itemSelect.value)">
+      <option value="">Select item</option>
+      <option *ngFor="let item of billService.items" [value]="item.name">{{ item.name }}</option>
+    </select>
+    <ul>
+      <li *ngFor="let item of person.items">{{ item.name }}</li>
+    </ul>
+    <p>Contribution: {{ getPersonContribution(person) }}</p>
+  </div>
+</div>
+

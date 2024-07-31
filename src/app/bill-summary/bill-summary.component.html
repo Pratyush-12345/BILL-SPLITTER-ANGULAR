@@ -1,0 +1,14 @@
+<div class="bill-summary">
+    <h2>Bill Summary</h2>
+    <ul>
+      <li *ngFor="let item of billService.items">
+        {{ item.name }} - {{ item.quantity }} x {{ item.price }} = {{ item.quantity * item.price }}
+      </li>
+    </ul>
+    <p>Subtotal: {{ billService.getSubtotal() }}</p>
+    <p>GST (5%): {{ billService.getGST() }}</p>
+    <p>Service Charge (5%): {{ billService.getServiceCharge() }}</p>
+    <p>Grand Total: {{ billService.getGrandTotal() }}</p>
+  </div>
+  
+  

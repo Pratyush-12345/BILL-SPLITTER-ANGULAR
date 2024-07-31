@@ -1,0 +1,16 @@
+.bill-input {
+    background-color: #e8f4fd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .bill-input input, .bill-input select {
+    width: calc(25% - 10px);
+    margin-right: 10px;
+  }
+  
+  .bill-input button {
+    width: calc(25% - 10px);
+  }
+  

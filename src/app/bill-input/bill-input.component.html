@@ -1,0 +1,14 @@
+<div class="bill-input">
+    <h2>Add Item</h2>
+    <input [(ngModel)]="item.name" placeholder="Item name">
+    <input [(ngModel)]="item.quantity" type="number" placeholder="Quantity">
+    <input [(ngModel)]="item.price" type="number" placeholder="Price">
+    <select [(ngModel)]="item.category">
+      <option value="Veg">Veg</option>
+      <option value="Non-Veg">Non-Veg</option>
+      <option value="Drinks">Drinks</option>
+      <option value="Non-Drinks">Non-Drinks</option>
+    </select>
+    <button (click)="addItem()">Add Item</button>
+  </div>
+  

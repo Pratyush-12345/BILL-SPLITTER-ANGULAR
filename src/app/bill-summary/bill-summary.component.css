@@ -1,0 +1,24 @@
+.bill-summary {
+    background-color: #e8f4fd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .bill-summary ul {
+    margin-bottom: 15px;
+  }
+  
+  .bill-summary li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  .bill-summary p {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+  }
+  
